@@ -1,6 +1,6 @@
 from aiogram.types import Message, CallbackQuery, User
 
-from loader import dp
+from loader import dp, _
 
 from keyboards.inline import menu, table_choose_liga, scorers_choose_liga, assists_choose_liga, matches_choose_liga
 from keyboards.inline import assists_choose_liga_en
@@ -8,14 +8,14 @@ from keyboards.inline import assists_choose_liga_en
 from utils.db_api import db
 
 
-@dp.message_handler(text=['Меню', 'Menu'])
+@dp.message_handler(text=_('Меню', lang=db.get_lang(User.get_current().id)))
 async def bot_start(message: Message):
-    await message.answer('Меню', reply_markup=menu)
+    await message.answer(_('Меню', lang=db.get_lang(User.get_current().id)), reply_markup=menu)
 
 
 @dp.callback_query_handler(text_contains='menu_')
 async def change_language(call: CallbackQuery):
-    await call.message.edit_text('Виберіть лігу')
+    await call.message.edit_text(_('Виберіть лігу', lang=db.get_lang(User.get_current().id)))
     task = call.data[-1]
     if task == 't':
         await call.message.edit_reply_markup(table_choose_liga)

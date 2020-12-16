@@ -4,4 +4,4 @@ from loader import dp
 
 @dp.message_handler()
 async def bot_echo(message: types.Message):
-    await message.answer('Не знаю такої команди')
+    await message.answer(_('Не знаю такої команди'))

@@ -9,5 +9,5 @@ bot = Bot(token=config.BOT_TOKEN, parse_mode=types.ParseMode.HTML)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
-# i18n = setup_lang_middleware(dp)
-# _ = i18n.gettext
+i18n = setup_lang_middleware(dp)
+_ = i18n.gettext
