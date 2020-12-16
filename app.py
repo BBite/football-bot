@@ -31,6 +31,6 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.call_later(DELAY, repeat, fill_all, loop)
 
-    # fill_all()
+    fill_all()
 
     executor.start_polling(dp, loop=loop, on_startup=on_startup)
