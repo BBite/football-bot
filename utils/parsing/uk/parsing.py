@@ -159,5 +159,5 @@ def parse_matches(URL) -> list:
 
 if __name__ == '__main__':
     beg = time.monotonic()
-    print(parse_scorers_fr('https://www.ua-football.com/ua/foreign/france/scorers'))
+    print(parse_matches('https://football24.ua/nimechchina_games_tag50829/'))
     print(time.monotonic() - beg)
