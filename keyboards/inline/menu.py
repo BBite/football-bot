@@ -7,16 +7,13 @@ menu = InlineKeyboardMarkup(
     inline_keyboard=
     [
         [
-            InlineKeyboardButton(text=_("Таблиці", lang=db.get_lang(User.get_current().id)), callback_data="menu_t")],
+            InlineKeyboardButton(text=_("Таблиці"), callback_data="menu_t")],
         [
-            InlineKeyboardButton(text=_("Топ бомбарадирів", lang=db.get_lang(User.get_current().id)),
-                                 callback_data="menu_s"),
-            InlineKeyboardButton(text=_("Топ асистентів", lang=db.get_lang(User.get_current().id)),
-                                 callback_data="menu_a"),
+            InlineKeyboardButton(text=_("Топ бомбарадирів"), callback_data="menu_s"),
+            InlineKeyboardButton(text=_("Топ асистентів"), callback_data="menu_a"),
         ],
         [
-            InlineKeyboardButton(text=_("Розклад матчів", lang=db.get_lang(User.get_current().id)),
-                                 callback_data="menu_m"),
+            InlineKeyboardButton(text=_("Розклад матчів"), callback_data="menu_m"),
         ],
     ]
 )

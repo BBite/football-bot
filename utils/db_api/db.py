@@ -63,7 +63,8 @@ def update(table: str, id: int, column_values: Dict):
 def get_lang(id: int) -> str:
     cursor.execute(f"SELECT * FROM users WHERE id = {id}")
     user = cursor.fetchone()
-    return user[3]
+    if user:
+        return user[3]
 
 
 def remade_matches():

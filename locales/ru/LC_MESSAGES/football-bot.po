@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-16 21:24+0200\n"
+"POT-Creation-Date: 2020-12-16 23:00+0200\n"
 "PO-Revision-Date: 2020-12-16 21:24+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
@@ -31,7 +31,7 @@ msgstr "Выберите язык"
 msgid "Мова була змінена"
 msgstr "Язык был изменен"
 
-#: handlers/users/echo.py:7
+#: handlers/users/echo.py:9
 msgid "Не знаю такої команди"
 msgstr "Не знаю такой команды"
 
@@ -91,11 +91,11 @@ msgstr "Таблицы"
 msgid "Топ бомбарадирів"
 msgstr "Топ бомбардиров"
 
-#: keyboards/inline/menu.py:14
+#: keyboards/inline/menu.py:13
 msgid "Топ асистентів"
 msgstr "Топ ассистентов"
 
-#: keyboards/inline/menu.py:18
+#: keyboards/inline/menu.py:16
 msgid "Розклад матчів"
 msgstr "Расписание матчей"
 

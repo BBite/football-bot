@@ -11,7 +11,7 @@ from keyboards.default import main_menu
 
 @dp.message_handler(CommandStart())
 async def bot_start(message: Message):
-    await message.answer(_('Привіт', lang=db.get_lang(User.get_current().id)) + f', {User.get_current().first_name}!',
+    await message.answer(_('Привіт') + f', {User.get_current().first_name}!',
                          reply_markup=main_menu)
     db.insert('users', {
         'id': User.get_current().id,
@@ -19,4 +19,4 @@ async def bot_start(message: Message):
         'last_name': User.get_current().last_name,
         'lang': User.get_current().locale.language
     })
-    await message.answer(_('Виберіть мову', lang=db.get_lang(User.get_current().id), reply_markup=choose_language))
+    await message.answer(_('Виберіть мову'), reply_markup=choose_language)

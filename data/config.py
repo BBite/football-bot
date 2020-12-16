@@ -14,6 +14,6 @@ admins = [
 
 ip = os.getenv("ip")
 
-I18N_DOMAIN = 'testbot'
-BASE_DIR = Path(__file__).parent
+I18N_DOMAIN = 'football-bot'
+BASE_DIR = Path(__file__).parent.parent
 LOCALES_DIR = BASE_DIR / 'locales'
