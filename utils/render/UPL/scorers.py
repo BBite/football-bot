@@ -10,60 +10,60 @@ def render_scorers(scorers: list, lang: str):
 
     if lang == 'en':
         goal_pos = 864
-        back_g = Image.open('C:/mpr/football_bot/utils/render/UPL/bg/scorers/UPL_en.jpg')
+        back_g = Image.open('C:/mpr/football-bot/utils/render/UPL/bg/scorers/UPL_en.jpg')
         logos = {
-            'Dynamo': r'C:/mpr/football_bot/utils/render/UPL/logo/Dynamo.png',
-            'Shakhtar': r'C:/mpr/football_bot/utils/render/UPL/logo/Shakhtar.png',
-            'Desna': r'C:/mpr/football_bot/utils/render/UPL/logo/Desna.png',
-            'Vorskla': r'C:/mpr/football_bot/utils/render/UPL/logo/Vorskla.png',
-            'Zorya': r'C:/mpr/football_bot/utils/render/UPL/logo/Zorya.png',
-            'Kolos': r'C:/mpr/football_bot/utils/render/UPL/logo/Kolos.png',
-            'Oleksandria': r'C:/mpr/football_bot/utils/render/UPL/logo/Oleksandriya.png',
-            'Olimpik': r'C:/mpr/football_bot/utils/render/UPL/logo/Olimpik.png',
-            'Mariupol': r'C:/mpr/football_bot/utils/render/UPL/logo/Mariupol.png',
-            'Inhulets': r'C:/mpr/football_bot/utils/render/UPL/logo/Ingulets.png',
-            'Minaj': r'C:/mpr/football_bot/utils/render/UPL/logo/Minaj.png',
-            'Dnipro-1': r'C:/mpr/football_bot/utils/render/UPL/logo/Dniprofake.png',
-            'Lviv': r'C:/mpr/football_bot/utils/render/UPL/logo/lviv.png',
-            'Rukh': r'C:/mpr/football_bot/utils/render/UPL/logo/Rukh.png'
+            'Dynamo': r'C:/mpr/football-bot/utils/render/UPL/logo/Dynamo.png',
+            'Shakhtar': r'C:/mpr/football-bot/utils/render/UPL/logo/Shakhtar.png',
+            'Desna': r'C:/mpr/football-bot/utils/render/UPL/logo/Desna.png',
+            'Vorskla': r'C:/mpr/football-bot/utils/render/UPL/logo/Vorskla.png',
+            'Zorya': r'C:/mpr/football-bot/utils/render/UPL/logo/Zorya.png',
+            'Kolos': r'C:/mpr/football-bot/utils/render/UPL/logo/Kolos.png',
+            'Oleksandria': r'C:/mpr/football-bot/utils/render/UPL/logo/Oleksandriya.png',
+            'Olimpik': r'C:/mpr/football-bot/utils/render/UPL/logo/Olimpik.png',
+            'Mariupol': r'C:/mpr/football-bot/utils/render/UPL/logo/Mariupol.png',
+            'Inhulets': r'C:/mpr/football-bot/utils/render/UPL/logo/Ingulets.png',
+            'Minaj': r'C:/mpr/football-bot/utils/render/UPL/logo/Minaj.png',
+            'Dnipro-1': r'C:/mpr/football-bot/utils/render/UPL/logo/Dniprofake.png',
+            'Lviv': r'C:/mpr/football-bot/utils/render/UPL/logo/lviv.png',
+            'Rukh': r'C:/mpr/football-bot/utils/render/UPL/logo/Rukh.png'
         }
     elif lang == 'ru':
         goal_pos = 871
-        back_g = Image.open('C:/mpr/football_bot/utils/render/UPL/bg/scorers/UPL_ru.jpg')
+        back_g = Image.open('C:/mpr/football-bot/utils/render/UPL/bg/scorers/UPL_ru.jpg')
         logos = {
-            'Динамо': r'C:/mpr/football_bot/utils/render/UPL/logo/Dynamo.png',
-            'Шахтер': r'C:/mpr/football_bot/utils/render/UPL/logo/Shakhtar.png',
-            'Десна': r'C:/mpr/football_bot/utils/render/UPL/logo/Desna.png',
-            'Ворскла': r'C:/mpr/football_bot/utils/render/UPL/logo/Vorskla.png',
-            'Заря': r'C:/mpr/football_bot/utils/render/UPL/logo/Zorya.png',
-            'Колос': r'C:/mpr/football_bot/utils/render/UPL/logo/Kolos.png',
-            'Александрия': r'C:/mpr/football_bot/utils/render/UPL/logo/Oleksandriya.png',
-            'Олимпик': r'C:/mpr/football_bot/utils/render/UPL/logo/Olimpik.png',
-            'Мариуполь': r'C:/mpr/football_bot/utils/render/UPL/logo/Mariupol.png',
-            'Ингулец': r'C:/mpr/football_bot/utils/render/UPL/logo/Ingulets.png',
-            'Минай': r'C:/mpr/football_bot/utils/render/UPL/logo/Minaj.png',
-            'СК Днепр-1': r'C:/mpr/football_bot/utils/render/UPL/logo/Dniprofake.png',
-            'Львов': r'C:/mpr/football_bot/utils/render/UPL/logo/lviv.png',
-            'Рух': r'C:/mpr/football_bot/utils/render/UPL/logo/Rukh.png'
+            'Динамо': r'C:/mpr/football-bot/utils/render/UPL/logo/Dynamo.png',
+            'Шахтер': r'C:/mpr/football-bot/utils/render/UPL/logo/Shakhtar.png',
+            'Десна': r'C:/mpr/football-bot/utils/render/UPL/logo/Desna.png',
+            'Ворскла': r'C:/mpr/football-bot/utils/render/UPL/logo/Vorskla.png',
+            'Заря': r'C:/mpr/football-bot/utils/render/UPL/logo/Zorya.png',
+            'Колос': r'C:/mpr/football-bot/utils/render/UPL/logo/Kolos.png',
+            'Александрия': r'C:/mpr/football-bot/utils/render/UPL/logo/Oleksandriya.png',
+            'Олимпик': r'C:/mpr/football-bot/utils/render/UPL/logo/Olimpik.png',
+            'Мариуполь': r'C:/mpr/football-bot/utils/render/UPL/logo/Mariupol.png',
+            'Ингулец': r'C:/mpr/football-bot/utils/render/UPL/logo/Ingulets.png',
+            'Минай': r'C:/mpr/football-bot/utils/render/UPL/logo/Minaj.png',
+            'СК Днепр-1': r'C:/mpr/football-bot/utils/render/UPL/logo/Dniprofake.png',
+            'Львов': r'C:/mpr/football-bot/utils/render/UPL/logo/lviv.png',
+            'Рух': r'C:/mpr/football-bot/utils/render/UPL/logo/Rukh.png'
         }
     else:
         goal_pos = 873
-        back_g = Image.open('C:/mpr/football_bot/utils/render/UPL/bg/scorers/UPL_ua.jpg')
+        back_g = Image.open('C:/mpr/football-bot/utils/render/UPL/bg/scorers/UPL_ua.jpg')
         logos = {
-            'Динамо': r'C:/mpr/football_bot/utils/render/UPL/logo/Dynamo.png',
-            'Шахтар': r'C:/mpr/football_bot/utils/render/UPL/logo/Shakhtar.png',
-            'Десна': r'C:/mpr/football_bot/utils/render/UPL/logo/Desna.png',
-            'Ворскла': r'C:/mpr/football_bot/utils/render/UPL/logo/Vorskla.png',
-            'Зоря': r'C:/mpr/football_bot/utils/render/UPL/logo/Zorya.png',
-            'Колос': r'C:/mpr/football_bot/utils/render/UPL/logo/Kolos.png',
-            'Олександрія': r'C:/mpr/football_bot/utils/render/UPL/logo/Oleksandriya.png',
-            'Олімпік': r'C:/mpr/football_bot/utils/render/UPL/logo/Olimpik.png',
-            'Маріуполь': r'C:/mpr/football_bot/utils/render/UPL/logo/Mariupol.png',
-            'Інгулець': r'C:/mpr/football_bot/utils/render/UPL/logo/Ingulets.png',
-            'Минай': r'C:/mpr/football_bot/utils/render/UPL/logo/Minaj.png',
-            'СК Дніпро-1': r'C:/mpr/football_bot/utils/render/UPL/logo/Dniprofake.png',
-            'Львів': r'C:/mpr/football_bot/utils/render/UPL/logo/lviv.png',
-            'Рух': r'C:/mpr/football_bot/utils/render/UPL/logo/Rukh.png'
+            'Динамо': r'C:/mpr/football-bot/utils/render/UPL/logo/Dynamo.png',
+            'Шахтар': r'C:/mpr/football-bot/utils/render/UPL/logo/Shakhtar.png',
+            'Десна': r'C:/mpr/football-bot/utils/render/UPL/logo/Desna.png',
+            'Ворскла': r'C:/mpr/football-bot/utils/render/UPL/logo/Vorskla.png',
+            'Зоря': r'C:/mpr/football-bot/utils/render/UPL/logo/Zorya.png',
+            'Колос': r'C:/mpr/football-bot/utils/render/UPL/logo/Kolos.png',
+            'Олександрія': r'C:/mpr/football-bot/utils/render/UPL/logo/Oleksandriya.png',
+            'Олімпік': r'C:/mpr/football-bot/utils/render/UPL/logo/Olimpik.png',
+            'Маріуполь': r'C:/mpr/football-bot/utils/render/UPL/logo/Mariupol.png',
+            'Інгулець': r'C:/mpr/football-bot/utils/render/UPL/logo/Ingulets.png',
+            'Минай': r'C:/mpr/football-bot/utils/render/UPL/logo/Minaj.png',
+            'СК Дніпро-1': r'C:/mpr/football-bot/utils/render/UPL/logo/Dniprofake.png',
+            'Львів': r'C:/mpr/football-bot/utils/render/UPL/logo/lviv.png',
+            'Рух': r'C:/mpr/football-bot/utils/render/UPL/logo/Rukh.png'
         }
 
     draw_text = ImageDraw.Draw(back_g)
@@ -93,7 +93,7 @@ def render_scorers(scorers: list, lang: str):
     # played
     draw_text.multiline_text((965, 440), '\n'.join(info_scorers[4]), spacing=32, font=font, fill='white')
 
-    back_g.save(rf'C:\mpr\football_bot\data\scorers\upl_{lang}.jpg')
+    back_g.save(rf'C:\mpr\football-bot\data\scorers\upl_{lang}.jpg')
 
 
 if __name__ == '__main__':

@@ -3,7 +3,7 @@ from typing import Dict, List, Tuple
 import sqlite3
 
 # conn = sqlite3.connect(os.path.join("db", r"C:\mpr\football_bot\utils\db_api\db\football.db"))
-conn = sqlite3.connect(r"C:\mpr\football_bot\utils\db_api\db\football.db")
+conn = sqlite3.connect(r"C:\mpr\football-bot\utils\db_api\db\football.db")
 cursor = conn.cursor()
 
 

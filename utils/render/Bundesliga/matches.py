@@ -17,7 +17,7 @@ def _fix_team_name(team_name):
 
 
 def render_matches(matches: list, lang: str):
-    back_g = Image.open(r'C:/mpr/football_bot/utils/render/Bundesliga/bg/matches/Next matches Bundesliga.jpg')
+    back_g = Image.open(r'C:/mpr/football-bot/utils/render/Bundesliga/bg/matches/Next matches Bundesliga.jpg')
     draw_text = ImageDraw.Draw(back_g)
 
     font = ImageFont.truetype(r"C:\mpr\aiogram-bot\utils\render\Roboto-Regular.ttf", size=36)
@@ -55,24 +55,24 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Bayern Munich': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
-            'Bayer Leverkusen': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
-            'RB Leipzig': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/RB Leipzig.png',
-            'Borussia D': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
-            'Wolfsburg': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Wolfsburg.png',
-            'Union Berlin': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Union Berlin.png',
-            'Borussia M': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
-            'Stuttgart': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Stuttgart.png',
-            'Eintracht': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Eintracht.png',
-            'Hoffenheim': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Hoffenheim.png',
-            'Augsburg': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Augsburg.png',
-            'Hertha BSC': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Herta BSC.png',
-            'Werder Bremen': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Werder Bremen.png',
-            'Freiburg': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Freiburg.png',
-            'Köln': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Koln.png',
-            'Arminia Bielefeld': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Arminia.png',
-            'Mainz 05': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Mainz 05.png',
-            'Schalke 04': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Schalke 04.png'
+            'Bayern Munich': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
+            'Bayer Leverkusen': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
+            'RB Leipzig': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/RB Leipzig.png',
+            'Borussia D': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
+            'Wolfsburg': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Wolfsburg.png',
+            'Union Berlin': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Union Berlin.png',
+            'Borussia M': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
+            'Stuttgart': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Stuttgart.png',
+            'Eintracht': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Eintracht.png',
+            'Hoffenheim': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Hoffenheim.png',
+            'Augsburg': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Augsburg.png',
+            'Hertha BSC': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Herta BSC.png',
+            'Werder Bremen': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Werder Bremen.png',
+            'Freiburg': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Freiburg.png',
+            'Köln': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Koln.png',
+            'Arminia Bielefeld': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Arminia.png',
+            'Mainz 05': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Mainz 05.png',
+            'Schalke 04': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Schalke 04.png'
         }
     elif lang == 'ru':
         canceled_text = 'Отменен'
@@ -102,24 +102,24 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Бавария': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
-            'Байер': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
-            'РБ Лейпциг': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/RB Leipzig.png',
-            'Боруссия Д': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
-            'Вольфсбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Wolfsburg.png',
-            'Унион Берлин': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Union Berlin.png',
-            'Боруссия М': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
-            'Штутгарт': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Stuttgart.png',
-            'Айнтрахт': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Eintracht.png',
-            'Хоффенхайм': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Hoffenheim.png',
-            'Аугсбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Augsburg.png',
-            'Герта': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Herta BSC.png',
-            'Вердер': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Werder Bremen.png',
-            'Фрайбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Freiburg.png',
-            'Кельн': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Koln.png',
-            'Арминия': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Arminia.png',
-            'Майнц': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Mainz 05.png',
-            'Шальке': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Schalke 04.png'
+            'Бавария': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
+            'Байер': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
+            'РБ Лейпциг': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/RB Leipzig.png',
+            'Боруссия Д': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
+            'Вольфсбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Wolfsburg.png',
+            'Унион Берлин': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Union Berlin.png',
+            'Боруссия М': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
+            'Штутгарт': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Stuttgart.png',
+            'Айнтрахт': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Eintracht.png',
+            'Хоффенхайм': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Hoffenheim.png',
+            'Аугсбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Augsburg.png',
+            'Герта': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Herta BSC.png',
+            'Вердер': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Werder Bremen.png',
+            'Фрайбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Freiburg.png',
+            'Кельн': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Koln.png',
+            'Арминия': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Arminia.png',
+            'Майнц': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Mainz 05.png',
+            'Шальке': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Schalke 04.png'
         }
     else:
         canceled_text = 'Скасовано'
@@ -149,24 +149,24 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Баварія': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
-            'Байєр': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
-            'РБ Лейпциг': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/RB Leipzig.png',
-            'Борусія Д': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
-            'Вольфсбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Wolfsburg.png',
-            'Уніон Берлін': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Union Berlin.png',
-            'Борусія М': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
-            'Штутгарт': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Stuttgart.png',
-            'Айнтрахт': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Eintracht.png',
-            'Хоффенхайм': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Hoffenheim.png',
-            'Аугсбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Augsburg.png',
-            'Герта': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Herta BSC.png',
-            'Вердер': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Werder Bremen.png',
-            'Фрайбург': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Freiburg.png',
-            'Кельн': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Koln.png',
-            'Армінія': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Arminia.png',
-            'Майнц': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Mainz 05.png',
-            'Шальке': r'C:/mpr/football_bot/utils/render/Bundesliga/logo/Schalke 04.png'
+            'Баварія': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayern Munchen.png',
+            'Байєр': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Bayer Leverkusen.png',
+            'РБ Лейпциг': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/RB Leipzig.png',
+            'Борусія Д': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Dortmund.png',
+            'Вольфсбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Wolfsburg.png',
+            'Уніон Берлін': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Union Berlin.png',
+            'Борусія М': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Borussia Monchengladbach.png',
+            'Штутгарт': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Stuttgart.png',
+            'Айнтрахт': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Eintracht.png',
+            'Хоффенхайм': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Hoffenheim.png',
+            'Аугсбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Augsburg.png',
+            'Герта': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Herta BSC.png',
+            'Вердер': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Werder Bremen.png',
+            'Фрайбург': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Freiburg.png',
+            'Кельн': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Koln.png',
+            'Армінія': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Arminia.png',
+            'Майнц': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Mainz 05.png',
+            'Шальке': r'C:/mpr/football-bot/utils/render/Bundesliga/logo/Schalke 04.png'
         }
 
     cur_weekday = None
@@ -194,7 +194,7 @@ def render_matches(matches: list, lang: str):
         back_g.paste(logo_2, (640, pos_y - 18), logo_2)
         pos_y += draw_text.textsize(text, font=font)[1]
 
-    back_g.save(rf'C:\mpr\football_bot\data\matches\b_{lang}.jpg')
+    back_g.save(rf'C:\mpr\football-bot\data\matches\b_{lang}.jpg')
 
 
 if __name__ == '__main__':

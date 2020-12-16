@@ -17,7 +17,7 @@ def _fix_team_name(team_name):
 
 
 def render_matches(matches: list, lang: str):
-    back_g = Image.open(r'C:/mpr/football_bot/utils/render/EPL/bg/matches/Next matches EPL.jpg')
+    back_g = Image.open(r'C:/mpr/football-bot/utils/render/EPL/bg/matches/Next matches EPL.jpg')
     draw_text = ImageDraw.Draw(back_g)
 
     font = ImageFont.truetype(r"C:\mpr\aiogram-bot\utils\render\Roboto-Regular.ttf", size=36)
@@ -55,26 +55,26 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Tottenham': r'C:/mpr/football_bot/utils/render/EPL/logo/Tottenham.png',
-            'Liverpool': r'C:/mpr/football_bot/utils/render/EPL/logo/Liverpool.png',
-            'Chelsea': r'C:/mpr/football_bot/utils/render/EPL/logo/Chelsea.png',
-            'Leicester City': r'C:/mpr/football_bot/utils/render/EPL/logo/Leicester.png',
-            'Southampton': r'C:/mpr/football_bot/utils/render/EPL/logo/Southampon.png',
-            'Manchester United': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester United.png',
-            'Manchester City': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester City.png',
-            'West Ham': r'C:/mpr/football_bot/utils/render/EPL/logo/West Ham.png',
-            'Everton': r'C:/mpr/football_bot/utils/render/EPL/logo/Everton.png',
-            'Wolverhampton': r'C:/mpr/football_bot/utils/render/EPL/logo/wolverhampton.png',
-            'Crystal Palace': r'C:/mpr/football_bot/utils/render/EPL/logo/Crystal Palace.png',
-            'Aston Villa': r'C:/mpr/football_bot/utils/render/EPL/logo/Aston Villa.png',
-            'Newcastle': r'C:/mpr/football_bot/utils/render/EPL/logo/Newcastle United.png',
-            'Leeds': r'C:/mpr/football_bot/utils/render/EPL/logo/Leeds United.png',
-            'Arsenal': r'C:/mpr/football_bot/utils/render/EPL/logo/Arsenal.png',
-            'Brighton': r'C:/mpr/football_bot/utils/render/EPL/logo/Brighton.png',
-            'Fulham': r'C:/mpr/football_bot/utils/render/EPL/logo/Fulham.png',
-            'Burnley': r'C:/mpr/football_bot/utils/render/EPL/logo/Burnley.png',
-            'West Bromwich': r'C:/mpr/football_bot/utils/render/EPL/logo/West Bromwich.png',
-            'Sheffield': r'C:/mpr/football_bot/utils/render/EPL/logo/Sheffield United.png'
+            'Tottenham': r'C:/mpr/football-bot/utils/render/EPL/logo/Tottenham.png',
+            'Liverpool': r'C:/mpr/football-bot/utils/render/EPL/logo/Liverpool.png',
+            'Chelsea': r'C:/mpr/football-bot/utils/render/EPL/logo/Chelsea.png',
+            'Leicester City': r'C:/mpr/football-bot/utils/render/EPL/logo/Leicester.png',
+            'Southampton': r'C:/mpr/football-bot/utils/render/EPL/logo/Southampon.png',
+            'Manchester United': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester United.png',
+            'Manchester City': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester City.png',
+            'West Ham': r'C:/mpr/football-bot/utils/render/EPL/logo/West Ham.png',
+            'Everton': r'C:/mpr/football-bot/utils/render/EPL/logo/Everton.png',
+            'Wolverhampton': r'C:/mpr/football-bot/utils/render/EPL/logo/wolverhampton.png',
+            'Crystal Palace': r'C:/mpr/football-bot/utils/render/EPL/logo/Crystal Palace.png',
+            'Aston Villa': r'C:/mpr/football-bot/utils/render/EPL/logo/Aston Villa.png',
+            'Newcastle': r'C:/mpr/football-bot/utils/render/EPL/logo/Newcastle United.png',
+            'Leeds': r'C:/mpr/football-bot/utils/render/EPL/logo/Leeds United.png',
+            'Arsenal': r'C:/mpr/football-bot/utils/render/EPL/logo/Arsenal.png',
+            'Brighton': r'C:/mpr/football-bot/utils/render/EPL/logo/Brighton.png',
+            'Fulham': r'C:/mpr/football-bot/utils/render/EPL/logo/Fulham.png',
+            'Burnley': r'C:/mpr/football-bot/utils/render/EPL/logo/Burnley.png',
+            'West Bromwich': r'C:/mpr/football-bot/utils/render/EPL/logo/West Bromwich.png',
+            'Sheffield': r'C:/mpr/football-bot/utils/render/EPL/logo/Sheffield United.png'
         }
     elif lang == 'ru':
         canceled_text = 'Отменен'
@@ -104,26 +104,26 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Тоттенхэм': r'C:/mpr/football_bot/utils/render/EPL/logo/Tottenham.png',
-            'Ливерпуль': r'C:/mpr/football_bot/utils/render/EPL/logo/Liverpool.png',
-            'Челси': r'C:/mpr/football_bot/utils/render/EPL/logo/Chelsea.png',
-            'Лестер Сити': r'C:/mpr/football_bot/utils/render/EPL/logo/Leicester.png',
-            'Саутгемптон': r'C:/mpr/football_bot/utils/render/EPL/logo/Southampon.png',
-            'Манчестер Юнайтед': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester United.png',
-            'Манчестер Сити': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester City.png',
-            'Вест Хэм': r'C:/mpr/football_bot/utils/render/EPL/logo/West Ham.png',
-            'Эвертон': r'C:/mpr/football_bot/utils/render/EPL/logo/Everton.png',
-            'Вулверхэмптон': r'C:/mpr/football_bot/utils/render/EPL/logo/wolverhampton.png',
-            'Кристал Пэлас': r'C:/mpr/football_bot/utils/render/EPL/logo/Crystal Palace.png',
-            'Астон Вилла': r'C:/mpr/football_bot/utils/render/EPL/logo/Aston Villa.png',
-            'Ньюкасл': r'C:/mpr/football_bot/utils/render/EPL/logo/Newcastle United.png',
-            'Лидс': r'C:/mpr/football_bot/utils/render/EPL/logo/Leeds United.png',
-            'Арсенал': r'C:/mpr/football_bot/utils/render/EPL/logo/Arsenal.png',
-            'Брайтон': r'C:/mpr/football_bot/utils/render/EPL/logo/Brighton.png',
-            'Фулхэм': r'C:/mpr/football_bot/utils/render/EPL/logo/Fulham.png',
-            'Бернли': r'C:/mpr/football_bot/utils/render/EPL/logo/Burnley.png',
-            'Вест Бромвич': r'C:/mpr/football_bot/utils/render/EPL/logo/West Bromwich.png',
-            'Шеффилд': r'C:/mpr/football_bot/utils/render/EPL/logo/Sheffield United.png'
+            'Тоттенхэм': r'C:/mpr/football-bot/utils/render/EPL/logo/Tottenham.png',
+            'Ливерпуль': r'C:/mpr/football-bot/utils/render/EPL/logo/Liverpool.png',
+            'Челси': r'C:/mpr/football-bot/utils/render/EPL/logo/Chelsea.png',
+            'Лестер Сити': r'C:/mpr/football-bot/utils/render/EPL/logo/Leicester.png',
+            'Саутгемптон': r'C:/mpr/football-bot/utils/render/EPL/logo/Southampon.png',
+            'Манчестер Юнайтед': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester United.png',
+            'Манчестер Сити': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester City.png',
+            'Вест Хэм': r'C:/mpr/football-bot/utils/render/EPL/logo/West Ham.png',
+            'Эвертон': r'C:/mpr/football-bot/utils/render/EPL/logo/Everton.png',
+            'Вулверхэмптон': r'C:/mpr/football-bot/utils/render/EPL/logo/wolverhampton.png',
+            'Кристал Пэлас': r'C:/mpr/football-bot/utils/render/EPL/logo/Crystal Palace.png',
+            'Астон Вилла': r'C:/mpr/football-bot/utils/render/EPL/logo/Aston Villa.png',
+            'Ньюкасл': r'C:/mpr/football-bot/utils/render/EPL/logo/Newcastle United.png',
+            'Лидс': r'C:/mpr/football-bot/utils/render/EPL/logo/Leeds United.png',
+            'Арсенал': r'C:/mpr/football-bot/utils/render/EPL/logo/Arsenal.png',
+            'Брайтон': r'C:/mpr/football-bot/utils/render/EPL/logo/Brighton.png',
+            'Фулхэм': r'C:/mpr/football-bot/utils/render/EPL/logo/Fulham.png',
+            'Бернли': r'C:/mpr/football-bot/utils/render/EPL/logo/Burnley.png',
+            'Вест Бромвич': r'C:/mpr/football-bot/utils/render/EPL/logo/West Bromwich.png',
+            'Шеффилд': r'C:/mpr/football-bot/utils/render/EPL/logo/Sheffield United.png'
         }
     else:
         canceled_text = 'Скасовано'
@@ -153,26 +153,26 @@ def render_matches(matches: list, lang: str):
         }
 
         logos = {
-            'Тоттенхем': r'C:/mpr/football_bot/utils/render/EPL/logo/Tottenham.png',
-            'Ліверпуль': r'C:/mpr/football_bot/utils/render/EPL/logo/Liverpool.png',
-            'Челсі': r'C:/mpr/football_bot/utils/render/EPL/logo/Chelsea.png',
-            'Лестер Сіті': r'C:/mpr/football_bot/utils/render/EPL/logo/Leicester.png',
-            'Саутгемптон': r'C:/mpr/football_bot/utils/render/EPL/logo/Southampon.png',
-            'Манчестер Юнайтед': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester United.png',
-            'Манчестер Сіті': r'C:/mpr/football_bot/utils/render/EPL/logo/Manchester City.png',
-            'Вест Хем': r'C:/mpr/football_bot/utils/render/EPL/logo/West Ham.png',
-            'Евертон': r'C:/mpr/football_bot/utils/render/EPL/logo/Everton.png',
-            'Вулверхемптон': r'C:/mpr/football_bot/utils/render/EPL/logo/wolverhampton.png',
-            'Крістал Пелас': r'C:/mpr/football_bot/utils/render/EPL/logo/Crystal Palace.png',
-            'Астон Вілла': r'C:/mpr/football_bot/utils/render/EPL/logo/Aston Villa.png',
-            'Ньюкасл': r'C:/mpr/football_bot/utils/render/EPL/logo/Newcastle United.png',
-            'Лідс': r'C:/mpr/football_bot/utils/render/EPL/logo/Leeds United.png',
-            'Арсенал': r'C:/mpr/football_bot/utils/render/EPL/logo/Arsenal.png',
-            'Брайтон': r'C:/mpr/football_bot/utils/render/EPL/logo/Brighton.png',
-            'Фулхем': r'C:/mpr/football_bot/utils/render/EPL/logo/Fulham.png',
-            'Бернлі': r'C:/mpr/football_bot/utils/render/EPL/logo/Burnley.png',
-            'Вест Бромвіч': r'C:/mpr/football_bot/utils/render/EPL/logo/West Bromwich.png',
-            'Шеффілд': r'C:/mpr/football_bot/utils/render/EPL/logo/Sheffield United.png'
+            'Тоттенхем': r'C:/mpr/football-bot/utils/render/EPL/logo/Tottenham.png',
+            'Ліверпуль': r'C:/mpr/football-bot/utils/render/EPL/logo/Liverpool.png',
+            'Челсі': r'C:/mpr/football-bot/utils/render/EPL/logo/Chelsea.png',
+            'Лестер Сіті': r'C:/mpr/football-bot/utils/render/EPL/logo/Leicester.png',
+            'Саутгемптон': r'C:/mpr/football-bot/utils/render/EPL/logo/Southampon.png',
+            'Манчестер Юнайтед': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester United.png',
+            'Манчестер Сіті': r'C:/mpr/football-bot/utils/render/EPL/logo/Manchester City.png',
+            'Вест Хем': r'C:/mpr/football-bot/utils/render/EPL/logo/West Ham.png',
+            'Евертон': r'C:/mpr/football-bot/utils/render/EPL/logo/Everton.png',
+            'Вулверхемптон': r'C:/mpr/football-bot/utils/render/EPL/logo/wolverhampton.png',
+            'Крістал Пелас': r'C:/mpr/football-bot/utils/render/EPL/logo/Crystal Palace.png',
+            'Астон Вілла': r'C:/mpr/football-bot/utils/render/EPL/logo/Aston Villa.png',
+            'Ньюкасл': r'C:/mpr/football-bot/utils/render/EPL/logo/Newcastle United.png',
+            'Лідс': r'C:/mpr/football-bot/utils/render/EPL/logo/Leeds United.png',
+            'Арсенал': r'C:/mpr/football-bot/utils/render/EPL/logo/Arsenal.png',
+            'Брайтон': r'C:/mpr/football-bot/utils/render/EPL/logo/Brighton.png',
+            'Фулхем': r'C:/mpr/football-bot/utils/render/EPL/logo/Fulham.png',
+            'Бернлі': r'C:/mpr/football-bot/utils/render/EPL/logo/Burnley.png',
+            'Вест Бромвіч': r'C:/mpr/football-bot/utils/render/EPL/logo/West Bromwich.png',
+            'Шеффілд': r'C:/mpr/football-bot/utils/render/EPL/logo/Sheffield United.png'
         }
 
     cur_weekday = None
@@ -200,7 +200,7 @@ def render_matches(matches: list, lang: str):
         back_g.paste(logo_2, (640, pos_y - 18), logo_2)
         pos_y += draw_text.textsize(text, font=font)[1]
 
-    back_g.save(rf'C:\mpr\football_bot\data\matches\epl_{lang}.jpg')
+    back_g.save(rf'C:\mpr\football-bot\data\matches\epl_{lang}.jpg')
 
 
 if __name__ == '__main__':
