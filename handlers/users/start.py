@@ -13,7 +13,7 @@ from keyboards.default import main_menu
 async def bot_start(message: Message):
     await message.answer(_('Привіт') + f', {User.get_current().first_name}!',
                          reply_markup=main_menu)
-    db.insert('users', {
+    db.insert_or_ignore('users', {
         'id': User.get_current().id,
         'first_name': User.get_current().first_name,
         'last_name': User.get_current().last_name,

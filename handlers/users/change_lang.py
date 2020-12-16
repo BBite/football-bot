@@ -1,8 +1,9 @@
-from aiogram.types import Message, CallbackQuery, User
+from aiogram.types import Message, CallbackQuery, User, ReplyKeyboardRemove
 
 from loader import dp, _
 
 from keyboards.inline import choose_language
+from keyboards.default.menu import get_main_menu
 
 from utils.db_api import db
 
@@ -19,4 +20,12 @@ async def change_language(call: CallbackQuery):
     db.update('users', User.get_current().id, {
         'lang': lang
     })
-    await call.message.edit_text(_("Мова була змінена", locale=lang))
+    # await call.message.edit_text(_("Мова була змінена", locale=lang))
+    full_lang = {
+        'uk': 'українська',
+        'ru': 'русский',
+        'en': 'English'
+    }
+    await call.message.answer(_("Мова була змінена", locale=lang), reply_markup=ReplyKeyboardRemove())
+    await call.message.answer(_('Ваша поточна мова', locale=lang) + f': {full_lang[lang]}',
+                              reply_markup=get_main_menu(db.get_lang(User.get_current().id)))

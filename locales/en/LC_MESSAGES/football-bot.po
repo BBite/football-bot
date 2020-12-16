@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-16 23:00+0200\n"
+"POT-Creation-Date: 2020-12-16 23:58+0200\n"
 "PO-Revision-Date: 2020-12-16 21:24+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,24 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: handlers/users/change_lang.py:10 keyboards/default/menu.py:13
+#: handlers/users/change_lang.py:11 keyboards/default/menu.py:13
+#: keyboards/default/menu.py:28
 msgid "Змінити мову"
 msgstr "Change language"
 
-#: handlers/users/change_lang.py:12 handlers/users/start.py:22
+#: handlers/users/change_lang.py:13 handlers/users/start.py:22
 msgid "Виберіть мову"
 msgstr "Choose language"
 
-#: handlers/users/change_lang.py:22
+#: handlers/users/change_lang.py:24
 msgid "Мова була змінена"
-msgstr "Language has been change"
+msgstr "Language has been changed"
+
+#: handlers/users/change_lang.py:25
+msgid "Ваша поточна мова"
+msgstr "Your current language"
 
 #: handlers/users/echo.py:9
 msgid "Не знаю такої команди"
 msgstr "I don't know such command"
 
 #: handlers/users/menu.py:11 handlers/users/menu.py:13
-#: keyboards/default/menu.py:9
+#: keyboards/default/menu.py:9 keyboards/default/menu.py:24
 msgid "Меню"
 msgstr "Menu"
 
@@ -97,4 +102,7 @@ msgstr "Top assistants"
 #: keyboards/inline/menu.py:16
 msgid "Розклад матчів"
 msgstr "Match schedule"
+
+#~ msgid "Ваша поточна мова: "
+#~ msgstr ""
 

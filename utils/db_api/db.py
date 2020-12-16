@@ -18,6 +18,28 @@ def insert(table: str, column_values: Dict):
         values)
     conn.commit()
 
+def insert_or_replace(table: str, column_values: Dict):
+    columns = ', '.join(column_values.keys())
+    values = [tuple(column_values.values())]
+    placeholders = ", ".join("?" * len(column_values.keys()))
+    cursor.executemany(
+        f"INSERT OR REPLACE INTO {table} "
+        f"({columns}) "
+        f"VALUES ({placeholders})",
+        values)
+    conn.commit()
+
+def insert_or_ignore(table: str, column_values: Dict):
+    columns = ', '.join(column_values.keys())
+    values = [tuple(column_values.values())]
+    placeholders = ", ".join("?" * len(column_values.keys()))
+    cursor.executemany(
+        f"INSERT OR IGNORE INTO {table} "
+        f"({columns}) "
+        f"VALUES ({placeholders})",
+        values)
+    conn.commit()
+
 
 def is_in_table(table: str, column_values: Dict) -> bool:
     cursor.executescript(

@@ -10,4 +10,4 @@ storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 i18n = setup_lang_middleware(dp)
-_ = i18n.gettext
+_ = i18n.lazy_gettext

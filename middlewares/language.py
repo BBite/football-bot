@@ -10,10 +10,9 @@ from utils.db_api import db
 class Localization(I18nMiddleware):
     async def get_user_locale(self, action: str, args: Tuple[Any]) -> str:
         user = types.User.get_current()
-        *_, data = args
-        language = data['locale'] = db.get_lang(user.id) or user.locale
-        return language
-        # return db.get_lang(user.id) or user.locale
+        # print(db.get_lang(user.id))
+        # print(db.get_lang(user.id) or user.locale)
+        return db.get_lang(user.id) or user.locale
 
 
 def setup_lang_middleware(dp):

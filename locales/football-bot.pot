@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-16 23:00+0200\n"
+"POT-Creation-Date: 2020-12-16 23:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: handlers/users/change_lang.py:10 keyboards/default/menu.py:13
+#: handlers/users/change_lang.py:11 keyboards/default/menu.py:13
+#: keyboards/default/menu.py:28
 msgid "Змінити мову"
 msgstr ""
 
-#: handlers/users/change_lang.py:12 handlers/users/start.py:22
+#: handlers/users/change_lang.py:13 handlers/users/start.py:22
 msgid "Виберіть мову"
 msgstr ""
 
-#: handlers/users/change_lang.py:22
+#: handlers/users/change_lang.py:24
 msgid "Мова була змінена"
+msgstr ""
+
+#: handlers/users/change_lang.py:25
+msgid "Ваша поточна мова"
 msgstr ""
 
 #: handlers/users/echo.py:9
@@ -34,7 +39,7 @@ msgid "Не знаю такої команди"
 msgstr ""
 
 #: handlers/users/menu.py:11 handlers/users/menu.py:13
-#: keyboards/default/menu.py:9
+#: keyboards/default/menu.py:9 keyboards/default/menu.py:24
 msgid "Меню"
 msgstr ""
 
