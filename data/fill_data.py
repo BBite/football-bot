@@ -2,6 +2,7 @@ from time import time
 
 
 def fill_tables():
+    print('start filling tables')
     from utils.render.Bundesliga import render_table as render_b
     from utils.render.EPL import render_table as render_epl
     from utils.render.La_Liga import render_table as render_ll
@@ -67,6 +68,7 @@ def fill_tables():
 
 
 def fill_scorers():
+    print('start filling scorers')
     from utils.render.Bundesliga import render_scorers as render_b
     from utils.render.EPL import render_scorers as render_epl
     from utils.render.La_Liga import render_scorers as render_ll
@@ -144,6 +146,7 @@ def fill_scorers():
 
 
 def fill_assists():
+    print('start filling assists')
     from utils.render.Bundesliga import render_assists as render_b
     from utils.render.EPL import render_assists as render_epl
     from utils.render.La_Liga import render_assists as render_ll
@@ -223,30 +226,31 @@ from datetime import datetime
 def fill_data_matches(match: dict, lang: str, liga: str):
     if match['time'] in ['Скасовано', 'Отменен', 'Canceled']:
         db.insert_matches('matches',
-                  {
-                      'team_1': match['team 1'],
-                      'team_2': match['team 2'],
-                      'liga': liga,
-                      'lang': lang,
-                      'is_canceled': True
-                  })
+                          {
+                              'team_1': match['team 1'],
+                              'team_2': match['team 2'],
+                              'liga': liga,
+                              'lang': lang,
+                              'is_canceled': True
+                          })
 
-    elif match['time'] != 'FT' and len(match['time']) > 2:
+    elif match['time'] != 'FT' and match['time'] != 'Live' and len(match['time']) > 2:
         if match['time'][2] != '-':
             time = match['time'].split(':')
             db.insert_matches('matches',
-                      {
-                          'time': datetime(int(match['year']), int(match['month']), int(match['day']),
-                                           int(time[0]), int(time[1])),
-                          'team_1': match['team 1'],
-                          'team_2': match['team 2'],
-                          'liga': liga,
-                          'lang': lang,
-                          'is_canceled': False
-                      })
+                              {
+                                  'time': datetime(int(match['year']), int(match['month']), int(match['day']),
+                                                   int(time[0]), int(time[1])),
+                                  'team_1': match['team 1'],
+                                  'team_2': match['team 2'],
+                                  'liga': liga,
+                                  'lang': lang,
+                                  'is_canceled': False
+                              })
 
 
 def fill_matches():
+    print('start filling matches')
     from utils.render.Bundesliga import render_matches as render_b
     from utils.render.EPL import render_matches as render_epl
     from utils.render.La_Liga import render_matches as render_ll
@@ -289,6 +293,7 @@ def fill_matches():
     }
 
     tasks = ((url_uk, 'uk'), (url_ru, 'ru'), (url_en, 'en'))
+
     try:
 
         for url, lang in tasks:
