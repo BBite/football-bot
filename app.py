@@ -10,8 +10,8 @@ async def on_startup(dp):
     from utils.db_api import db
     db.check_db_exists()
 
-    from utils.notify_admins import on_startup_notify
-    await on_startup_notify(dp)
+    # from utils.notify_admins import on_startup_notify
+    # await on_startup_notify(dp)
 
 
 DELAY = 3600
