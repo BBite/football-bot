@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-12-16 23:58+0200\n"
+"POT-Creation-Date: 2020-12-17 11:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: handlers/users/change_lang.py:11 keyboards/default/menu.py:13
-#: keyboards/default/menu.py:28
+#: handlers/users/change_lang.py:11 handlers/users/help.py:15
+#: keyboards/default/menu.py:13 keyboards/default/menu.py:28
 msgid "Змінити мову"
 msgstr ""
 
@@ -26,11 +26,11 @@ msgstr ""
 msgid "Виберіть мову"
 msgstr ""
 
-#: handlers/users/change_lang.py:24
+#: handlers/users/change_lang.py:29
 msgid "Мова була змінена"
 msgstr ""
 
-#: handlers/users/change_lang.py:25
+#: handlers/users/change_lang.py:30
 msgid "Ваша поточна мова"
 msgstr ""
 
@@ -38,17 +38,55 @@ msgstr ""
 msgid "Не знаю такої команди"
 msgstr ""
 
+#: handlers/users/help.py:12
+msgid "Список команд"
+msgstr ""
+
+#: handlers/users/help.py:13
+msgid "Запустити бота"
+msgstr ""
+
+#: handlers/users/help.py:14
+msgid "Отримати список команд"
+msgstr ""
+
+#: handlers/users/help.py:16
+msgid "Відкрити меню"
+msgstr ""
+
+#: handlers/users/help.py:17
+msgid "Відкрити таблицю результатів"
+msgstr ""
+
+#: handlers/users/help.py:18
+msgid "Відкрити топ бомбрадирів"
+msgstr ""
+
+#: handlers/users/help.py:19
+msgid "Відкрити топ асистентів"
+msgstr ""
+
+#: handlers/users/help.py:20
+msgid "Відкдити розклад матчів"
+msgstr ""
+
 #: handlers/users/menu.py:11 handlers/users/menu.py:13
 #: keyboards/default/menu.py:9 keyboards/default/menu.py:24
 msgid "Меню"
 msgstr ""
 
-#: handlers/users/menu.py:18
+#: handlers/users/menu.py:18 handlers/users/menu.py:37
+#: handlers/users/menu.py:39 handlers/users/menu.py:42
+#: handlers/users/menu.py:44 handlers/users/menu.py:46
 msgid "Виберіть лігу"
 msgstr ""
 
 #: handlers/users/start.py:14
 msgid "Привіт"
+msgstr ""
+
+#: handlers/users/start.py:23
+msgid "Натисніть /help, щоб отримати список команд"
 msgstr ""
 
 #: keyboards/inline/choose_liga.py:10 keyboards/inline/choose_liga.py:28

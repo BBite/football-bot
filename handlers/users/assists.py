@@ -1,4 +1,4 @@
-from aiogram.types import CallbackQuery, User
+from aiogram.types import CallbackQuery, User, Message
 
 from loader import dp
 
@@ -6,7 +6,7 @@ from utils.db_api import db
 
 
 @dp.callback_query_handler(text_contains='m_a_')
-async def change_language(call: CallbackQuery):
+async def assists_handler(call: CallbackQuery):
     await call.message.edit_reply_markup()
     task = call.data.split('_')[-1]
     lang = db.get_lang(User.get_current().id)

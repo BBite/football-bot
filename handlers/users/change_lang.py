@@ -8,7 +8,7 @@ from keyboards.default.menu import get_main_menu
 from utils.db_api import db
 
 
-@dp.message_handler(text=_('Змінити мову'))
+@dp.message_handler(text=[_('Змінити мову'), '/lang'])
 async def bot_start(message: Message):
     await message.answer(_('Виберіть мову'), reply_markup=choose_language)
 

@@ -8,7 +8,7 @@ from keyboards.inline import assists_choose_liga_en
 from utils.db_api import db
 
 
-@dp.message_handler(text=_('Меню'))
+@dp.message_handler(text=[_('Меню'), '/menu'])
 async def bot_start(message: Message):
     await message.answer(_('Меню'), reply_markup=menu)
 
@@ -28,3 +28,19 @@ async def change_language(call: CallbackQuery):
             await call.message.edit_reply_markup(assists_choose_liga_en)
     elif task == 'm':
         await call.message.edit_reply_markup(matches_choose_liga)
+
+
+@dp.message_handler(commands=['table', 'scorers', 'assists', 'matches'])
+async def command_handler(message: Message):
+    task = message.text[1]
+    if task == 't':
+        await message.answer(_('Виберіть лігу'), reply_markup=table_choose_liga)
+    elif task == 's':
+        await message.answer(_('Виберіть лігу'), reply_markup=scorers_choose_liga)
+    elif task == 'a':
+        if db.get_lang(User.get_current().id) != 'en':
+            await message.answer(_('Виберіть лігу'), reply_markup=assists_choose_liga)
+        else:
+            await message.answer(_('Виберіть лігу'), reply_markup=assists_choose_liga_en)
+    elif task == 'm':
+        await message.answer(_('Виберіть лігу'), reply_markup=matches_choose_liga)

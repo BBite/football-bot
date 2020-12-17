@@ -20,3 +20,4 @@ async def bot_start(message: Message):
         'lang': User.get_current().locale.language
     })
     await message.answer(_('Виберіть мову'), reply_markup=choose_language)
+    await message.answer(_('Натисніть /help, щоб отримати список команд'))
